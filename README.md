@@ -1,7 +1,7 @@
 # MakeKmlGpsLog
 Make KML file from Race track GPS log  
 【機能】   
-　自動車レースやサーキット走行等の周回走行におけるNMEAフォーマットのGPSログデータから、ラップタイム/区間タイム/軌跡をKMLフォーマットに変換するPythonスクリプトになります。   
+　自動車レースやサーキット走行等の周回走行(筑波サーキットTC2000)におけるNMEAフォーマットのGPSログデータから、ラップタイム/区間タイム/軌跡をKMLフォーマットに変換するPythonスクリプトになります。   
    
 【開発背景】   
 　Amazon等で¥2000前後で入手できるUSB‐GPSレシーバーとノートPC(車載)を用いて安価に実現できる、サーキット等でのクローズド周回路における運転技術の向上に役立つ事を目的とした。
@@ -39,5 +39,17 @@ $GPVTG,,T,,M,0.091,N,0.169,K,D*20
 　　とりあえず、こちらで試してみて1.の環境に移行するのもよいかと思います。   
      
 【追伸】   
-　サンプルとして、TC2000.logおよび生成したTC2000.kmlをこちらに置きます。
-　　遅い！とか、ライン取りが悪い！等のissueは受け付けません(笑) 
+　筑波サーキットTC2000以外に適用したい場合は、座標データ(東経,北緯)を変更することで対応可能です。   
+　連立方程式の解法を使用している関係上、関数にならない(=Point1/2で北緯が同じ)と演算できなくなります。   
+　この場合は、極小さな値を加算するなどして対策してください。
+ ```
+    Sector1StartPoint1 = [139.91930,36.15020]   #Sector1 start line(Start line) point1 [Longitude,Latitude]/ セクター1(スタートライン)の点1 東経,北緯
+    Sector1StartPoint2 = [139.91982,36.15011]   #Sector1 start line(Start line) point2 [Longitude,Latitude]/ セクター1(スタートライン)の点2 東経,北緯
+    Sector2StartPoint1 = [139.92052,36.15013]   #Sector2 start line point1 [Longitude,Latitude]/ セクター2開始線の点1 東経,北緯
+    Sector2StartPoint2 = [139.92095,36.15007]   #Sector2 start line point2 [Longitude,Latitude]/ セクター2開始線の点2 東経,北緯
+    Sector3StartPoint1 = [139.92161,36.14971]   #Sector3 start line point1 [Longitude,Latitude]/ セクター3開始線の点1 東経,北緯
+    Sector3StartPoint2 = [139.92208,36.14942]   #Sector3 start line point2 [Longitude,Latitude]/ セクター3開始線の点1 東経,北緯
+```
+ 
+ 　サンプルとして、TC2000.logおよび生成したTC2000.kmlをこちらに置きます。   
+　　本サンプルに対して、遅い！とか、ライン取りが悪い！等のissueは受け付けません(笑) 
