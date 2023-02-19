@@ -23,7 +23,7 @@ $GPVTG,,T,,M,0.091,N,0.169,K,D*20
 　1.MakeKmlGpsLog.pyのダウンロード   
 　　　任意のフォルダ上にMakeKmlGpsLog.pyをダウンロードする。   
 　2.NMEAフォーマットのGPSログデータの保存   
-　　　MakeKmlGpsLog.pyを保存した同一フォルダにNMEAフォーマットのGPSログデータを"TC2000.log"というファイルネームで保存する。   
+　　　"TC2000.log"というファイルネームでNMEAフォーマットのGPSログデータをMakeKmlGpsLog.pyを保存した同一フォルダに保存する。   
 　3.MakeKmlGpsLog.pyの実行   
 　　　MakeKmlGpsLog.pyを実行する。   
 　　　'The process has been completed. / プロセスは完了しました。'   
