@@ -24,7 +24,7 @@ $GPVTG,,T,,M,0.091,N,0.169,K,D*20
 　　　任意のフォルダ上にMakeKmlGpsLog.pyをダウンロードする。   
 　2.NMEAフォーマットのGPSログデータの保存   
 　　　"TC2000.log"というファイルネームでNMEAフォーマットのGPSログデータをMakeKmlGpsLog.pyを保存した同一フォルダに保存する。   
-　　　USB‐GPSレシーバーによるログの取得方法は、こちらを参考にしてください。
+　　　USB‐GPSレシーバーによるログの取得方法は、こちらを参考にしてください。   
 　3.KMLファイルの生成/MakeKmlGpsLog.pyの実行   
 　　　MakeKmlGpsLog.pyを実行する。   
 　　　'The process has been completed. / プロセスは完了しました。'   
