@@ -2,6 +2,7 @@
 Make KML file from Race track GPS log  
 【機能】   
 自動車レースやサーキット走行等の周回走行におけるNMEAフォーマットのGPSログデータから、ラップタイム/区間タイム/軌跡をKMLフォーマットに変換するPythonスクリプトになります。   
+   
 【開発背景】   
 Amazon等で¥2000前後で入手できるUSB‐GPSレシーバーとノートPC(車載)を用いて安価に実現できる、サーキット等でのクローズド周回路における運転技術の向上に役立つ事を目的とした。
    
@@ -28,12 +29,7 @@ $GPVTG,,T,,M,0.091,N,0.169,K,D*20
 　　　'The process has been completed. / プロセスは完了しました。'   
 　　　と表示されたら、各LAP/セクターに分割した"TC2000.kml"が生成されます。   
 　　　中間生成物として"TC2000tmp.kml"と"TC2000tmp.txt"が生成されますが、正常終了後は消去してもらって良いです。   
-      
-
-MakeKmlGpsLog.pyを置く同じフォルダに"TC2000.log"というファイル名でNMEAフォーマットを置いてPythonスクリプトを実行すると、   
-'The process has been completed. / プロセスは完了しました。'
-と表示されたら、各LAP/セクターに分割した"TC2000.kml"が生成されます。   
-中間生成物として"TC2000tmo.kml"と"TC2000tmp.txt"が生成されますが、正常終了後は消去してもらって良いです。   
+    
 【KMLファイルの閲覧方法】   
 　1.Google earth proによる閲覧   
 　　Google Earth Proは無料でダウンロード/利用できますので、こちらを使うのがおすすめです。   
