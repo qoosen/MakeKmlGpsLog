@@ -18,16 +18,16 @@ $GPRMC,052032.50,A,3609.00729,N,13955.30284,E,0.091,,260123,,,D*7C
 $GPVTG,,T,,M,0.091,N,0.169,K,D*20
 ```
 【変換方法】   
-	0.Pythonのインストール   
+　0.Pythonのインストール   
 　1.MakeKmlGpsLog.pyのダウンロード   
-　　任意のフォルダ上にMakeKmlGpsLog.pyをダウンロードする。   
+　　　任意のフォルダ上にMakeKmlGpsLog.pyをダウンロードする。   
 　2.NMEAフォーマットのGPSログデータの保存   
-　　MakeKmlGpsLog.pyを保存した同一フォルダにNMEAフォーマットのGPSログデータを"TC2000.log"というファイルネームで保存する。   
+　　　MakeKmlGpsLog.pyを保存した同一フォルダにNMEAフォーマットのGPSログデータを"TC2000.log"というファイルネームで保存する。   
 　3.MakeKmlGpsLog.pyの実行   
-　　MakeKmlGpsLog.pyを実行する。   
-　　'The process has been completed. / プロセスは完了しました。'   
-　　と表示されたら、各LAP/セクターに分割した"TC2000.kml"が生成されます。   
-　　中間生成物として"TC2000tmo.kml"と"TC2000tmp.txt"が生成されますが、正常終了後は消去してもらって良いです。   
+　　　MakeKmlGpsLog.pyを実行する。   
+　　　'The process has been completed. / プロセスは完了しました。'   
+　　　と表示されたら、各LAP/セクターに分割した"TC2000.kml"が生成されます。   
+　　　中間生成物として"TC2000tmp.kml"と"TC2000tmp.txt"が生成されますが、正常終了後は消去してもらって良いです。   
       
 
 MakeKmlGpsLog.pyを置く同じフォルダに"TC2000.log"というファイル名でNMEAフォーマットを置いてPythonスクリプトを実行すると、   
