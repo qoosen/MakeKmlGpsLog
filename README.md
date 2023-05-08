@@ -51,6 +51,7 @@ $GPVTG,,T,,M,0.091,N,0.169,K,D*20
     Sector3StartPoint1 = [139.92161,36.14971]   #Sector3 start line point1 [Longitude,Latitude]/ セクター3開始線の点1 東経,北緯
     Sector3StartPoint2 = [139.92208,36.14942]   #Sector3 start line point2 [Longitude,Latitude]/ セクター3開始線の点1 東経,北緯
 ```
+ ![TC2000image](images/TC2000.png "TC2000")
  
  　サンプルとして、GPSログデータ'TC2000.log'および本スクリプトで生成したKMLファイル'TC2000.kml'をSampleに置きます。   
 　　本サンプルに対して、遅い！とか、ライン取りが悪い！等のissueは受け付けません(笑) 
